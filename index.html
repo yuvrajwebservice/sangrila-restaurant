@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangrila Restaurant – Modern Luxury Dining</title>
+    <meta name="description" content="Experience modern luxury dining at Sangrila. Reserve a table, explore signature dishes, and discover our elegant ambience.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="site-header" id="header">
+        <nav class="nav container">
+            <a href="#" class="logo">Sangrila</a>
+            <button class="nav-toggle" aria-label="Open menu" aria-controls="primary-menu" aria-expanded="false">
+                <svg width="24" height="24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
+            <ul class="nav-list" id="primary-menu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#dishes">Signature</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="reserve-btn" id="reserveOpen">Reserve a Table</button>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <svg class="chandelier" viewBox="0 0 200 200" aria-hidden="true">
+                <circle cx="100" cy="30" r="20" fill="url(#goldGrad)"/>
+                <defs>
+                    <radialGradient id="goldGrad">
+                        <stop offset="0%" stop-color="#FFEFD5"/>
+                        <stop offset="100%" stop-color="#D4AF37"/>
+                    </radialGradient>
+                </defs>
+                <path d="M100 50 L100 150" stroke="#D4AF37" stroke-width="4"/>
+                <path d="M80 150 L120 150" stroke="#D4AF37" stroke-width="4"/>
+                <circle cx="100" cy="150" r="6" fill="#D4AF37"/>
+            </svg>
+        </div>
+        <div class="hero-content container">
+            <h1 class="hero-title">Elevate Your Senses</h1>
+            <p class="hero-sub">Modern luxury dining inspired by timeless flavors.</p>
+            <button class="btn-primary" id="reserveOpenHero">Reserve a Table</button>
+        </div>
+    </section>
+
+    <!-- Signature Dishes -->
+    <section class="section dishes" id="dishes">
+        <div class="container">
+            <h2 class="section-title">Signature Dishes</h2>
+            <div class="cards">
+                <article class="card">
+                    <div class="card-img" style="background: linear-gradient(135deg, #5B0E2D, #0D1F2D);">
+                        <svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="45" fill="none" stroke="#D4AF37" stroke-width="4"/></svg>
+                    </div>
+                    <h3 class="card-title">Spiced Lamb Chops</h3>
+                    <p class="card-desc">Tender lamb marinated in a secret blend of Kashmiri chilies and rosemary, served on a charcoal‑smoked platter.</p>
+                    <span class="price">₹1,250</span>
+                </article>
+                <article class="card">
+                    <div class="card-img" style="background: linear-gradient(135deg, #5B0E2D, #0D1F2D);">
+                        <svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="45" fill="none" stroke="#D4AF37" stroke-width="4"/></svg>
+                    </div>
+                    <h3 class="card-title">Truffle Mushroom Risotto</h3>
+                    <p class="card-desc">Creamy Arborio rice infused with wild forest mushrooms and a whisper of black truffle oil.</p>
+                    <span class="price">₹950</span>
+                </article>
+                <article class="card">
+                    <div class="card-img" style="background: linear-gradient(135deg, #5B0E2D, #0D1F2D);">
+                        <svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="45" fill="none" stroke="#D4AF37" stroke-width="4"/></svg>
+                    </div>
+                    <h3 class="card-title">Saffron Sea Bass</h3>
+                    <p class="card-desc">Pan‑seared sea bass glazed with saffron‑citrus butter, accompanied by a fennel‑orange salad.</p>
+                    <span class="price">₹1,100</span>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="section menu" id="menu">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+            <p class="section-intro">A curated selection of contemporary classics and seasonal creations.</p>
+            <div class="menu-grid">
+                <div class="menu-category">
+                    <h3 class="menu-heading">Starters</h3>
+                    <ul class="menu-list">
+                        <li><span>Roasted Beet Carpaccio</span><span class="price">₹350</span></li>
+                        <li><span>Smoked Duck Breast</span><span class="price">₹420</span></li>
+                        <li><span>Golden Tempura Prawns</span><span class="price">₹480</span></li>
+                    </ul>
+                </div>
+                <div class="menu-category">
+                    <h3 class="menu-heading">Mains</h3>
+                    <ul class="menu-list">
+                        <li><span>Charcoal Grilled Ribeye</span><span class="price">₹1,650</span></li>
+                        <li><span>Herb Crusted Sea Bream</span><span class="price">₹1,300</span></li>
+                        <li><span>Vegetarian Delight (Mushroom & Spinach)</span><span class="price">₹950</span></li>
+                    </ul>
+                </div>
+                <div class="menu-category">
+                    <h3 class="menu-heading">Desserts</h3>
+                    <ul class="menu-list">
+                        <li><span>Rose‑Scented Panna Cotta</span><span class="price">₹380</span></li>
+                        <li><span>Dark Chocolate Fondant</span><span class="price">₹420</span></li>
+                        <li><span>Cardamom Kulfi</span><span class="price">₹300</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="section about" id="about">
+        <div class="container about-grid">
+            <div class="about-text">
+                <h2 class="section-title">Our Story</h2>
+                <p>Founded in 2015, Sangrila blends contemporary culinary artistry with the warm hospitality of Indian heritage. Our chefs travel globally to source the finest ingredients, turning each plate into a narrative of flavor, texture, and aroma.</p>
+                <p>Every corner of our dining room is designed to whisper elegance—rich woods, brushed brass, and ambient lighting that frames the culinary performance.</p>
+                <button class="btn-secondary" id="reserveOpenAbout">Reserve Your Experience</button>
+            </div>
+            <div class="about-visual">
+                <svg viewBox="0 0 200 200" aria-hidden="true">
+                    <rect x="20" y="20" width="160" height="160" fill="none" stroke="#D4AF37" stroke-width="4" rx="12"/>
+                    <circle cx="100" cy="100" r="60" fill="url(#marbleGrad)"/>
+                    <defs>
+                        <radialGradient id="marbleGrad">
+                            <stop offset="0%" stop-color="#F5F0E1"/>
+                            <stop offset="100%" stop-color="#EDE8DC"/>
+                        </radialGradient>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            <div class="gallery-grid">
+                <figure class="gallery-item">
+                    <svg viewBox="0 0 300 200" aria-label="Dining ambience">
+                        <rect width="300" height="200" fill="url(#galleryGrad1)"/>
+                        <defs>
+                            <linearGradient id="galleryGrad1">
+                                <stop offset="0%" stop-color="#0D1F2D"/>
+                                <stop offset="100%" stop-color="#5B0E2D"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </figure>
+                <figure class="gallery-item">
+                    <svg viewBox="0 0 300 200" aria-label="Signature dish close‑up">
+                        <rect width="300" height="200" fill="url(#galleryGrad2)"/>
+                        <defs>
+                            <linearGradient id="galleryGrad2">
+                                <stop offset="0%" stop-color="#5B0E2D"/>
+                                <stop offset="100%" stop-color="#0D1F2D"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </figure>
+                <figure class="gallery-item">
+                    <svg viewBox="0 0 300 200" aria-label="Chef plating">
+                        <rect width="300" height="200" fill="url(#galleryGrad3)"/>
+                        <defs>
+                            <linearGradient id="galleryGrad3">
+                                <stop offset="0%" stop-color="#D4AF37"/>
+                                <stop offset="100%" stop-color="#E06F5B"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </figure>
+                <figure class="gallery-item">
+                    <svg viewBox="0 0 300 200" aria-label="Evening lighting">
+                        <rect width="300" height="200" fill="url(#galleryGrad4)"/>
+                        <defs>
+                            <linearGradient id="galleryGrad4">
+                                <stop offset="0%" stop-color="#0D1F2D"/>
+                                <stop offset="100%" stop-color="#E06F5B"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="section reviews" id="reviews">
+        <div class="container">
+            <h2 class="section-title">What Our Guests Say</h2>
+            <div class="review-slider" aria-live="polite">
+                <article class="review">
+                    <p class="review-text">“An unforgettable night – the ambience, service, and flavors were all perfectly orchestrated.”</p>
+                    <p class="review-author">— Arjun Mehta</p>
+                </article>
+                <article class="review">
+                    <p class="review-text">“The Truffle Mushroom Risotto is pure decadence. I’ll be back for the lamb chops!”</p>
+                    <p class="review-author">— Priya Sharma</p>
+                </article>
+                <article class="review">
+                    <p class="review-text">“Sangrila feels like a private dining club. Every detail exudes luxury.”</p>
+                    <p class="review-author">— Michael Lee</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Reservation -->
+    <section class="section contact" id="contact">
+        <div class="container contact-grid">
+            <div class="contact-info">
+                <h2 class="section-title">Get in Touch</h2>
+                <p><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3z" stroke="currentColor" stroke-width="2" fill="none"/></svg> 123 Royal Avenue, New Delhi, India</p>
+                <p><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92V21a2 2 0 0 1-2.18 2c-10.58-.86-19-9.28-19.86-19.86A2 2 0 0 1 3 1h4.09a1 1 0 0 1 1 .75c.12.45.27.89.45 1.31a1 1 0 0 1-.24 1.09L6 5.5a16 16 0 0 0 7 7l1.35-1.35a1 1 0 0 1 1.09-.24c.42.18.86.33 1.31.45a1 1 0 0 1 .75 1V16.92z" stroke="currentColor" stroke-width="2" fill="none"/></svg> +91 98765 43210</p>
+                <p><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v16H4z" stroke="currentColor" stroke-width="2" fill="none"/><path d="M16 2v4M8 2v4M4 10h16M4 14h16M4 18h16" stroke="currentColor" stroke-width="2"/></svg> reservations@sangrila.com</p>
+            </div>
+            <div class="contact-form">
+                <h3>Reserve a Table</h3>
+                <form id="reservationForm" novalidate>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" required>
+                    
+                    <label for="time">Time</label>
+                    <input type="time" id="time" name="time" required>
+                    
+                    <label for="guests">Guests</label>
+                    <input type="number" id="guests" name="guests" min="1" max="20" required>
+                    
+                    <button type="submit" class="btn-primary">Submit Reservation</button>
+                </form>
+                <p id="formMessage" role="alert" aria-live="polite"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <p>&copy; 2024 Sangrila Restaurant. All rights reserved.</p>
+            <nav class="footer-nav">
+                <a href="#hero">Home</a>
+                <a href="#dishes">Signature</a>
+                <a href="#menu">Menu</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Reservation Modal (hidden by default) -->
+    <div class="modal" id="reserveModal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+        <div class="modal-content" role="document">
+            <button class="modal-close" aria-label="Close reservation form">&times;</button>
+            <h2 id="modalTitle">Reserve Your Table</h2>
+            <form id="modalReservationForm" novalidate>
+                <label for="modal-name">Name</label>
+                <input type="text" id="modal-name" required>
+                
+                <label for="modal-email">Email</label>
+                <input type="email" id="modal-email" required>
+                
+                <label for="modal-phone">Phone</label>
+                <input type="tel" id="modal-phone" required>
+                
+                <label for="modal-date">Date</label>
+                <input type="date" id="modal-date" required>
+                
+                <label for="modal-time">Time</label>
+                <input type="time" id="modal-time" required>
+                
+                <label for="modal-guests">Guests</label>
+                <input type="number" id="modal-guests" min="1" max="20" required>
+                
+                <button type="submit" class="btn-primary">Confirm Reservation</button>
+                <p id="modalMessage" role="alert" aria-live="polite"></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
